@@ -154,3 +154,4 @@ output "private_subnet_ids"     { value = module.private_subnets.ids }
 output "public_ip"              { value = aws_eip.elastic_ip.public_ip }
 output "public_subnet_ids"      { value = module.public_subnets.ids }
 output "vpc_id"                 { value = module.vpc.id }
+output "internet_gateway"       { value = aws_internet_gateway.gateway.id }
